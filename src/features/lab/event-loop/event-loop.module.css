@@ -1,0 +1,149 @@
+.wrapper {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+  padding: 1rem 1.15rem 1.25rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.select {
+  margin-top: 0.35rem;
+  min-width: 14rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.speed {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding-left: 0.75rem;
+  border-left: 1px solid rgb(var(--rgb-border));
+}
+
+.slider {
+  width: 8rem;
+}
+
+.description {
+  margin: 0.75rem 0 1rem;
+}
+
+.gridArea {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1000px) {
+  .gridArea {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 0.9fr);
+  }
+}
+
+.code {
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(var(--rgb-border));
+  background: rgb(var(--rgb-surface));
+  font-size: 0.82rem;
+  line-height: 1.55;
+  overflow-x: auto;
+  color: rgb(var(--rgb-fg));
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .columns {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.column {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 8px;
+  padding: 0.7rem 0.75rem;
+  min-height: 8.5rem;
+  background: rgb(var(--rgb-surface));
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.3rem;
+}
+
+.column li {
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  background: rgb(var(--rgb-fg) / 0.06);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.column .empty {
+  background: transparent;
+  color: rgb(var(--rgb-fg-muted));
+  font-style: italic;
+}
+
+.stack li {
+  border-left: 3px solid rgb(var(--rgb-accent));
+}
+.webapi li {
+  border-left: 3px solid #b592ff;
+}
+.micro li {
+  border-left: 3px solid #4dd4a2;
+}
+.macro li {
+  border-left: 3px solid #ffb454;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.note,
+.logs {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 8px;
+  padding: 0.7rem 0.75rem;
+  background: rgb(var(--rgb-surface));
+}
+
+.logs pre {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  min-height: 4rem;
+  white-space: pre-wrap;
+}
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

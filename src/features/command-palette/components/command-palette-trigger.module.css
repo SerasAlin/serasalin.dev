@@ -1,0 +1,33 @@
+.trigger {
+  border-color: rgb(var(--rgb-border));
+  color: rgb(var(--rgb-fg-muted));
+  gap: 0.75rem;
+  min-width: 12rem;
+  justify-content: space-between;
+  text-transform: none;
+  padding-inline: 0.75rem;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: rgb(var(--rgb-fg) / 0.08);
+  color: rgb(var(--rgb-fg));
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .trigger {
+    min-width: 0;
+  }
+  .label {
+    display: none;
+  }
+}

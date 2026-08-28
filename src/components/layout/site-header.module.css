@@ -1,0 +1,73 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgb(var(--rgb-surface) / 0.85);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid rgb(var(--rgb-border));
+}
+
+.inner {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: rgb(var(--rgb-fg));
+  font-weight: 700;
+}
+
+.brandGlyph {
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 6px;
+  background: linear-gradient(
+    140deg,
+    rgb(var(--rgb-accent)),
+    color-mix(in oklab, rgb(var(--rgb-accent)), rgb(var(--rgb-surface)) 40%)
+  );
+  color: rgb(var(--rgb-surface));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.brandPrompt {
+  transform: translateY(-1px);
+}
+
+.brandName {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: none;
+  margin-left: 0.5rem;
+  flex: 1;
+}
+
+.actions {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .nav {
+    display: flex;
+  }
+}
