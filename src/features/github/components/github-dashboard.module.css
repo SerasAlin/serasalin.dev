@@ -1,0 +1,133 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.profile {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 1px solid rgb(var(--rgb-border));
+}
+
+.metrics {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 720px) {
+  .profile {
+    grid-template-columns: auto 1fr auto;
+  }
+  .metrics {
+    grid-column: auto;
+    grid-template-columns: repeat(3, auto);
+    gap: 1.5rem;
+  }
+}
+
+.metric {
+  text-align: left;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}
+
+.chartCard,
+.topicsCard {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+  padding: 1rem 1.15rem 1.25rem;
+  min-height: 16rem;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.repos {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .repos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.repo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 10px;
+  background: rgb(var(--rgb-surface-2));
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 140ms ease;
+}
+
+.repo:hover {
+  border-color: rgb(var(--rgb-accent));
+}
+
+.repoHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.repoName {
+  font-weight: 600;
+}
+
+.repoMeta {
+  font-family: var(--font-mono);
+  color: rgb(var(--rgb-fg-muted));
+  font-size: 0.78rem;
+}
+
+.repoDescription {
+  margin: 0;
+  color: rgb(var(--rgb-fg));
+  font-size: 0.9rem;
+}
+
+.repoFooter {
+  margin: 0.25rem 0 0;
+  color: rgb(var(--rgb-fg-muted));
+  font-size: 0.78rem;
+}

@@ -1,0 +1,41 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.15rem;
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.15rem;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  color: rgb(var(--rgb-fg-muted));
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition:
+    color 120ms ease,
+    background-color 120ms ease;
+}
+
+.column .link {
+  padding: 0.55rem 0.8rem;
+}
+
+.link:hover {
+  color: rgb(var(--rgb-fg));
+  background-color: rgb(var(--rgb-fg) / 0.05);
+}
+
+.active {
+  color: rgb(var(--rgb-fg));
+  background-color: rgb(var(--rgb-accent) / 0.12);
+}

@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  padding: 1.25rem;
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+}
+
+.list {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+
+.item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.detail {
+  color: rgb(var(--rgb-fg-muted));
+  font-size: 0.9rem;
+}

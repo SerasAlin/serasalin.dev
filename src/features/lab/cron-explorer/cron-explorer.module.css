@@ -1,0 +1,40 @@
+.wrapper {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+  padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.input {
+  font-family: var(--font-mono);
+}
+
+.runs {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.runs li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 8px;
+  background: rgb(var(--rgb-surface));
+}
+
+.iso {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: rgb(var(--rgb-accent));
+}
+
+.pretty {
+  color: rgb(var(--rgb-fg-muted));
+  font-size: 0.85rem;
+}
