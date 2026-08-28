@@ -1,0 +1,50 @@
+.wrapper {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  background: rgb(var(--rgb-surface-2));
+  padding: 1.15rem 1.25rem 1.25rem;
+}
+
+.input {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.panel {
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  background: rgb(var(--rgb-surface));
+}
+
+.accent {
+  border-left: 3px solid rgb(var(--rgb-accent));
+}
+.ok {
+  border-left: 3px solid #4dd4a2;
+}
+.muted {
+  border-left: 3px solid rgb(var(--rgb-border));
+}
+
+.pre {
+  margin: 0.35rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

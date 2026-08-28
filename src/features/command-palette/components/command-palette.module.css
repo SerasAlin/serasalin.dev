@@ -1,0 +1,114 @@
+.paper {
+  background-color: rgb(var(--rgb-surface-2));
+  border: 1px solid rgb(var(--rgb-border));
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 20rem;
+  max-height: min(70vh, 32rem);
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid rgb(var(--rgb-border));
+}
+
+.prompt {
+  font-family: var(--font-mono);
+  color: rgb(var(--rgb-accent));
+}
+
+.input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: rgb(var(--rgb-fg));
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  padding: 0.25rem 0;
+}
+
+.input::placeholder {
+  color: rgb(var(--rgb-fg-muted));
+}
+
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background: rgb(var(--rgb-fg) / 0.08);
+  color: rgb(var(--rgb-fg-muted));
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.section {
+  padding: 0.25rem 0;
+}
+
+.sectionTitle {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(var(--rgb-fg-muted));
+  padding: 0.5rem 1rem 0.25rem;
+}
+
+.subList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-left: 2px solid transparent;
+}
+
+.itemActive {
+  background-color: rgb(var(--rgb-accent) / 0.14);
+  border-left-color: rgb(var(--rgb-accent));
+}
+
+.itemTitle {
+  color: rgb(var(--rgb-fg));
+  font-size: 0.9rem;
+}
+
+.itemSubtitle {
+  color: rgb(var(--rgb-fg-muted));
+  font-size: 0.78rem;
+  margin-top: 0.15rem;
+}
+
+.empty {
+  padding: 1.5rem 1rem;
+  color: rgb(var(--rgb-fg-muted));
+  text-align: center;
+}
+
+.footer {
+  padding: 0.55rem 1rem;
+  border-top: 1px solid rgb(var(--rgb-border));
+  display: flex;
+  gap: 1rem;
+  font-size: 0.72rem;
+  font-family: var(--font-mono);
+  color: rgb(var(--rgb-fg-muted));
+}

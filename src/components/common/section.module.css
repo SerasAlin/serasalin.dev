@@ -1,0 +1,27 @@
+.section {
+  padding-block: 2.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-top: 0.25rem;
+}
+
+.description {
+  margin-top: 0.35rem;
+  max-width: 42rem;
+}
+
+.actions {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
